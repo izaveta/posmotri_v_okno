@@ -75,7 +75,7 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 26px;
 }
 
 .title {
@@ -93,7 +93,7 @@ ol {
 .result__video-container {
   width: 711px; 
   height: 386px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -127,16 +127,21 @@ ol {
   font-family: 'Oswald', sans-serif; 
   font-weight: 700; 
   text-transform: uppercase; 
+  width: 200px;
   line-height: 30px; 
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
   font-size: 18px; 
   font-family: 'Fira Sans Condensed', sans-serif; 
   font-weight: 400; 
-  line-height: 16.20px; 
+  line-height: 16.20px;
+  flex-grow: 1;
+  flex-basis: 0;
+  overflow: hidden;
 }
 
 .content__card-link {
@@ -268,13 +273,13 @@ ol {
   border: 1px solid white;
 }
 
-.content__card-link_current:active {
-  background-color: #545050;
-}
-
-.content__video-card-title:hover {
+.content__card-link:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
+}
+
+.content__card-link_current:active {
+  background-color: #545050;
 }
 
 .content__video-card-description:hover {
