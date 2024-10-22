@@ -46,6 +46,7 @@ ol {
   width: 1140px;
   flex-direction: row;
   gap: 30px;
+  max-width: 100%;
 }
 
 .search-form {
@@ -63,7 +64,8 @@ ol {
   width: 399px; 
   height: 298px;
   overflow-y: auto;
-  position: relative;
+  width: auto;
+  max-width: 100%;
 }
 
 .content__list-item:not(:last-of-type) {
@@ -108,6 +110,7 @@ ol {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  width: 398px;
 }
 
 .content__video-card-thumbnail {
@@ -286,6 +289,11 @@ ol {
 }
 
 .search-form__label-text:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+.search-form__fieldset .search-form__label:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
 }
