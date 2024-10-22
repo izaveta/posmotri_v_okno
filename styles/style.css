@@ -293,7 +293,7 @@ ol {
   text-decoration-color: #fff;
 }
 
-.search-form__label:hover > .search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-decoration-color: #fff;
 }
