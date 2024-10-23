@@ -61,11 +61,11 @@ ol {
 }
 
 .content__list {
-  width: 399px; 
+  width: 406px; 
   height: 298px;
   overflow-y: auto;
-  width: auto;
   max-width: 100%;
+  position: relative;
 }
 
 .content__list-item:not(:last-of-type) {
